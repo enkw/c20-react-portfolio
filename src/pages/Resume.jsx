@@ -1,9 +1,9 @@
 function Resume() {
-  const resumeUrl = '/assets/Resume.pdf';
+  const resume = '/assets/Resume.pdf';
 
   const handleDownloadClick = () => {
     const link = document.createElement('a');
-    link.href = resumeUrl;
+    link.href = resume;
     link.download = 'ian_wolfe_resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -14,7 +14,7 @@ function Resume() {
     <div className="container">
       <h2>My Resume</h2>
       <div>
-        <embed src={resumeUrl} type="application/pdf" width="100%" height="600px" />
+        <embed src={resume} type="application/pdf" width="100%" height="600px" />
       </div>
       <div>
         <button className="btn btn-primary mt-3" onClick={handleDownloadClick}>
