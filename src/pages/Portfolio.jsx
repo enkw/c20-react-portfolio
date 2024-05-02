@@ -1,3 +1,4 @@
+// Declaring the 6 projects I chose to display as an array
 const projects = [
   {
     title: 'Just Another Text Editor',
@@ -37,6 +38,7 @@ const projects = [
   },
 ];
 
+// Exporting the portfolio page, page maps the projects array to two rows of three
 export default function Portfolio() {
   return (
     <div className="container">

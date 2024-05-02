@@ -1,8 +1,11 @@
 import ReactDOM from 'react-dom/client'
+// Grabbing these for route usage
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
+// Importing bootstrap for that quick easy style fix
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+// Importing my pages and the App
 import App from './App';
 import Error from './pages/Error';
 import Contact from './pages/Contact';
@@ -10,7 +13,7 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
-
+// Declaring my routes for Outlet
 const router = createBrowserRouter([
   {
     path: '/',

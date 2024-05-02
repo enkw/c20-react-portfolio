@@ -1,3 +1,4 @@
+// Exports my About Me page with a photo of myself and a brief intro and skill list
 export default function About() {
   return (
     <div className="container">

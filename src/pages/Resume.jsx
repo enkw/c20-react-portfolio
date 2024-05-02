@@ -1,6 +1,7 @@
 function Resume() {
   const resume = '/assets/Resume.pdf';
 
+  // Function that handles downloading my resume
   const handleDownloadClick = () => {
     const link = document.createElement('a');
     link.href = resume;
@@ -10,6 +11,7 @@ function Resume() {
     document.body.removeChild(link);
   };
 
+  // Returns my resume embedded on the page with a button to download it
   return (
     <div className="container">
       <h2>My Resume</h2>
@@ -18,7 +20,7 @@ function Resume() {
       </div>
       <div>
         <button className="btn btn-primary mt-3" onClick={handleDownloadClick}>
-          Download Resume
+          Download
         </button>
       </div>
     </div>
