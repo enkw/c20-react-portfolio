@@ -21,7 +21,7 @@ No installation necessary.
 To view my portfolio, click [here](https://enkw-react-portfolio.netlify.app/).
 
 Example:
-![Example image description text](./screenshots/Screenshot-of-portfolio.png)
+![Screenshot of my About Me page](./screenshots/Screenshot-of-portfolio.png)
   
 ## Credits
   
@@ -29,7 +29,7 @@ Ian Wolfe.
   
 ## Features
   
-This project features .
+This project features react, bootstrap, vite, and eslint.
 
 ## Questions
 
