@@ -1,19 +1,30 @@
-export default function Resume() {
+import React from 'react';
+
+function Resume() {
+  const resumeUrl = '/assets/Resume.pdf';
+
+  const handleDownloadClick = () => {
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'ian_wolfe_resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <div>
-      <h1>My Resume</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
+    <div className="container">
+      <h2>My Resume</h2>
+      <div>
+        <embed src={resumeUrl} type="application/pdf" width="100%" height="600px" />
+      </div>
+      <div>
+        <button className="btn btn-primary mt-3" onClick={handleDownloadClick}>
+          Download Resume
+        </button>
+      </div>
     </div>
   );
 }
+
+export default Resume;
