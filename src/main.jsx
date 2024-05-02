@@ -20,6 +20,11 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error />,
     children: [
+      // Sets the "Home page" to my about me for now
+      {
+        path: '/',
+        element: <About />,
+      },
       {
         path: '/About',
         element: <About />,
